@@ -11,3 +11,5 @@
 [x] npm i concurrently
 
 [x] npm run start:dev
+
+[x] npm i axios
