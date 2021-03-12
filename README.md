@@ -5,3 +5,9 @@
 [x] npm i json-server
 
 [x] https://jsonplaceholder.typicode.com/ 
+
+[x] npm run json-server
+
+[x] npm i concurrently
+
+[x] npm run start:dev
