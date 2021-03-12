@@ -5,16 +5,20 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Navbar from './layout/Navbar'
-
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-       <Navbar/>
-       <Home/>
-       <About/>
-       <Contact/>
-    </div>
+     <Router>
+       <div className="App">
+          <Navbar/>
+          <Switch>
+             <Route exact path='/' component = {Home}/>
+             <Route exact path='/about' component = {About}/>
+             <Route exact path='/contact' component = {Contact}/>
+          </Switch>
+       </div>
+     </Router>
   );
 }
 
